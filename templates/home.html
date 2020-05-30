@@ -1,0 +1,29 @@
+{% extends 'base.html'%}
+
+{% block content %}
+
+<form action="result" method='post'>
+{% csrf_token %}
+<center>
+    <li>
+        <h1>hello 9eye!!!!!</h1>
+        store/clinic/hospital/companyname: <input type="text" name="your name"><br><span class="required">*</span>
+
+        front/inside picture:<br><span class="required">*</span>
+        <p>
+            <input type="file" id="myfile" name="myfile">
+        <p/>
+
+
+        business card:<span class="required">*</span>
+        <p>
+            <input type="file" id="myfile" name="myfile">
+        </p>
+        <input type ="submit">
+    </li>
+</center>
+
+</form>
+
+
+{% endblock %}
